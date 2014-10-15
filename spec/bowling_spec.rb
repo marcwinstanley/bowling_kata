@@ -15,5 +15,11 @@ RSpec.describe "Bowling Kata" do
     game = Bowling.new
     expect( game.score(6, 3) ).to eq(9)
   end
+
+  it "checks if a strike is added on to the next score" do
+    game = Bowling.new
+    game.score(10, 0)
+    expect( game.score(6, 3) ).to eq(19)
+  end
   
 end
