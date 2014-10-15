@@ -5,6 +5,8 @@ class Bowling
       "Strike"
     elsif turn1 + turn2 == 10
       "Spare"
+    else
+      turn1 + turn2
     end
   end
 

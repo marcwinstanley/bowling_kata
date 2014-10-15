@@ -6,13 +6,14 @@ RSpec.describe "Bowling Kata" do
     expect( game.score(10, 0) ).to eq("Strike")
   end
 
-  # it "checks that a spare is registered when two turns add up to 10" do
-  #   game = Bowling.new
-  #   expect( game.score(7, 3) ).to eq("Spare")
-  # end
+  it "checks that a spare is registered when two turns add up to 10" do
+    game = Bowling.new
+    expect( game.score(7, 3) ).to eq("Spare")
+  end
 
-  # it "checks the score if the frame score is less than 10" do
-  #   expect( )
-  # end
+  it "checks the score if the frame score is less than 10" do
+    game = Bowling.new
+    expect( game.score(6, 3) ).to eq(9)
+  end
   
 end
